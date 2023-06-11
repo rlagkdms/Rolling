@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 public class RollingPaperService {
     private final RollingPaperRepository rollingPaperRepository;
     public RollingPaper save(AddRollingPaperRequest request){
+
         return rollingPaperRepository.save(request.toEntity());
     }
 }
