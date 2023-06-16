@@ -1,18 +1,12 @@
 package org.rolling.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.rolling.domain.Article;
 import org.rolling.domain.RollingPaper;
-import org.rolling.dto.AddArticleRequest;
 import org.rolling.dto.AddRollingPaperRequest;
-import org.rolling.dto.ArticleResponse;
-import org.rolling.service.BlogService;
 import org.rolling.service.RollingPaperService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RequiredArgsConstructor
 @RestController

@@ -1,6 +1,5 @@
 package org.rolling.repository;
 
-import org.rolling.domain.Article;
 import org.rolling.domain.RollingPaper;
 import org.springframework.data.jpa.repository.JpaRepository;
 
