@@ -27,13 +27,13 @@ public class Paper {
     private Long paper_writer_no;
 
     @Builder
-    public Paper(String paper_content, Long paper_no, Long paper_writer_no) {
+    public Paper(Long paper_no, Long paper_writer_no, String paper_content) {
         this.paper_no = paper_no;
         this.paper_writer_no = paper_writer_no;
         this.paper_content = paper_content;
     }
 
-    void update(String paper_content, Long paper_no, Long paper_writer_no) {
+    public void update(Long paper_no, Long paper_writer_no, String paper_content) {
         this.paper_no = paper_no;
         this.paper_writer_no = paper_writer_no;
         this.paper_content = paper_content;
