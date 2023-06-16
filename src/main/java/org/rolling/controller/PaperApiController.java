@@ -44,4 +44,12 @@ public class PaperApiController {
         return ResponseEntity.ok()
                 .body(new PaperResponse(paper));
     }
+
+    @DeleteMapping("/api/papers/{id}")
+    public ResponseEntity<Void> deletePaper(@PathVariable long id) {
+        paperService.delete(id);
+
+        return ResponseEntity.ok()
+                .build();
+    }
 }

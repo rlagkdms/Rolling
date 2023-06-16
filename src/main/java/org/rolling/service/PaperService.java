@@ -30,4 +30,8 @@ public class PaperService {
         return paperRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("not found: "+id));
     }
+
+    public void delete(long id) {
+        paperRepository.deleteById(id);
+    }
 }
