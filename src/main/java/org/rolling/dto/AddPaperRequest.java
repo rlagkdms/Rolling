@@ -10,10 +10,14 @@ import org.rolling.domain.Paper;
 @Getter
 public class AddPaperRequest {
 
+    private Long paper_no;
+    private Long paper_writer_no;
     private String paper_content;
 
     public Paper toEntity() {
         return Paper.builder()
+                .paper_no(paper_no)
+                .paper_writer_no(paper_writer_no)
                 .paper_content(paper_content)
                 .build();
     }
