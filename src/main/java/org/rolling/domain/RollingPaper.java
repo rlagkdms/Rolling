@@ -15,7 +15,7 @@ public class RollingPaper {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "paper_id", updatable = false)
-    private Long id;
+    private Long paper_id;
 
     @Column(name = "title", nullable = false)
     private String title;
@@ -31,6 +31,10 @@ public class RollingPaper {
 
     @Column(name = "sent_to", nullable = false)
     private String to;
+
+    @Column(name = "paper_content", nullable = false) // 편지 내용
+    private String paper_content;
+
 
     @Builder//빌더 패턴으로 객체 생성
     public RollingPaper(String title, String content, Date date, String from, String to){
